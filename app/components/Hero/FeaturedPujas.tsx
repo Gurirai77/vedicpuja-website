@@ -6,7 +6,7 @@ const featuredPujasData = [
     id: 1,
     title: 'Annapurna Puja & Yagna Online Booking',
     category: 'Puja Services, Hindi Puja, Homam And Yajna',
-    image: '/annapurna-puja.jpg', // अपनी इमेज पाथ डालें
+    image: '/about.jpg', // अपनी इमेज पाथ डालें
     priceRange: '₹5,100.00 – ₹51,000.00',
     discount: '-29%',
     isHot: false
@@ -15,7 +15,7 @@ const featuredPujasData = [
     id: 2,
     title: 'Gau Mata Puja Online Booking',
     category: 'Puja Services, Hindi Puja, Online Puja',
-    image: '/gau-mata.jpg', // अपनी इमेज पाथ डालें
+    image: '/about.jpg', // अपनी इमेज पाथ डालें
     priceRange: '₹5,100.00',
     originalPrice: '₹11,000.00',
     discount: '-54%',
@@ -25,7 +25,7 @@ const featuredPujasData = [
     id: 3,
     title: 'Birthday Puja Online Booking',
     category: 'Puja Services, Hindi Puja, Online Puja',
-    image: '/birthday-puja.jpg', // अपनी इमेज पाथ डालें
+    image: '/about.jpg', // अपनी इमेज पाथ डालें
     priceRange: '₹3,499.00 – ₹15,499.00',
     discount: '-31%',
     isHot: false
@@ -34,7 +34,7 @@ const featuredPujasData = [
     id: 4,
     title: 'Nandi Puja Online Booking',
     category: 'Puja Services, Hindi Puja, Online Puja',
-    image: '/nandi-puja.jpg', // अपनी इमेज पाथ डालें
+    image: '/about.jpg', // अपनी इमेज पाथ डालें
     priceRange: '₹3,499.00 – ₹51,000.00',
     discount: '-31%',
     isHot: false

@@ -11,7 +11,7 @@ export default function PujaServicesInfo() {
           <span className={styles.topTag}>Vedic Wisdom</span>
           <h2 className={styles.mainHeading}>Online Puja Booking Services</h2>
           <p className={styles.mainDesc}>
-            <strong className={styles.brandText}>OnlinePujaBooking.com</strong> is a trusted platform where devotees can book authentic Vedic puja services online from anywhere in the world. Our mission is to make sacred rituals accessible, simple, and spiritually meaningful.
+            <strong className={styles.brandText}>onlinevedicpuja.com/</strong> is a trusted platform where devotees can book authentic Vedic puja services online from anywhere in the world. Our mission is to make sacred rituals accessible, simple, and spiritually meaningful.
           </p>
           <p className={styles.subDesc}>
             All puja, yajna, and homa rituals are performed by experienced <strong>Vedic priests</strong> following traditional procedures and spiritual discipline. We ensure devotion, authenticity, and proper Sankalp for every ritual. ✨
@@ -49,7 +49,7 @@ export default function PujaServicesInfo() {
           <div className={styles.infoCard}>
             <div className={styles.cardHeader}>
               <span className={styles.icon}>⭐</span>
-              <h3>WHY CHOOSE ONLINEPUJABOOKING.COM</h3>
+              <h3>WHY CHOOSE VedicPuja</h3>
             </div>
             <p>
               We focus on authenticity, transparency, and spiritual trust in every service we provide. Devotees receive guided support from booking to puja completion.
@@ -67,7 +67,7 @@ export default function PujaServicesInfo() {
               Invite divine blessings into your life through authentic <strong>Vedic rituals</strong> performed in India. Experience spiritual peace and positive energy from the comfort of your home.
             </p>
             <div className={styles.footerHighlight}>
-              <strong>OnlinePujaBooking.com</strong> makes <span className={styles.purpleText}>online puja</span> booking simple, secure, and spiritually fulfilling. 🕉️
+              <strong>onlinevedicpuja.com</strong> makes <span className={styles.purpleText}>online puja</span> booking simple, secure, and spiritually fulfilling. 🕉️
             </div>
           </div>
 

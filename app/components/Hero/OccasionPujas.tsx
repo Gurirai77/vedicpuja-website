@@ -6,7 +6,7 @@ const occasionPujasData = [
     id: 1,
     title: 'Vana Durga Mantra Jaap Online Booking',
     category: 'Puja Services, Hindi Puja, Occasional Puja, Online Puja',
-    image: '/vana-durga.jpg', // अपनी इमेज का पाथ यहाँ डालें
+    image: '/images (1).jpg', // अपनी इमेज का पाथ यहाँ डालें
     priceRange: '₹7,100.00 – ₹51,000.00',
     discount: '-35%'
   },
@@ -14,7 +14,7 @@ const occasionPujasData = [
     id: 2,
     title: 'Sat Chandi Paath and Yajna Online',
     category: 'Puja Services, Hindi Puja, Occasional Puja, Path',
-    image: '/sat-chandi.jpg', // अपनी इमेज का पाथ यहाँ डालें
+    image: '/images (1).jpg', // अपनी इमेज का पाथ यहाँ डालें
     priceRange: '₹75,000.00 – ₹1,51,000.00',
     discount: '-26%'
   },
@@ -22,7 +22,7 @@ const occasionPujasData = [
     id: 3,
     title: 'Gand Mool Nakshatra Puja',
     category: 'Puja Services, Dosh Puja, Hindi Puja, Occasional Puja',
-    image: '/gand-mool.jpg', // अपनी इमेज का पाथ यहाँ डालें
+    image: '/images (1).jpg', // अपनी इमेज का पाथ यहाँ डालें
     priceRange: '₹7,499.00 – ₹21,000.00',
     discount: '-16%'
   },
@@ -30,7 +30,7 @@ const occasionPujasData = [
     id: 4,
     title: 'Akhand Ramayan Paath Sri Ram Charit Manas',
     category: 'Hindi Puja, Occasional Puja, Path, Puja Services',
-    image: '/akhand-ramayan.jpg', // अपनी इमेज का पाथ यहाँ डालें
+    image: '/images (1).jpg', // अपनी इमेज का पाथ यहाँ डालें
     priceRange: '₹21,000.00 – ₹32,499.00',
     discount: '-11%'
   }

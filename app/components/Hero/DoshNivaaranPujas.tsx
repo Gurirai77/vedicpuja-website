@@ -6,7 +6,7 @@ const doshPujasData = [
     id: 1,
     title: 'Grahan Yog Shanti Puja',
     category: 'Puja Services, Dosh Puja, Hindi Puja, Online Puja',
-    image: '/grahan-yog.jpg', // अपनी इमेज का पाथ यहाँ डालें
+    image: '/images.jpg', // अपनी इमेज का पाथ यहाँ डालें
     priceRange: '₹9,100.00 – ₹51,000.00',
     discount: '-28%'
   },
@@ -14,7 +14,7 @@ const doshPujasData = [
     id: 2,
     title: 'Kali Puja & Yagna Online Booking',
     category: 'Puja Services, Dosh Puja, Hindi Puja, Online Puja',
-    image: '/kali-puja.jpg', // अपनी इमेज का पाथ यहाँ डालें
+    image: '/images.jpg', // अपनी इमेज का पाथ यहाँ डालें
     priceRange: '₹3,100.00 – ₹51,000.00',
     discount: '-56%'
   },
@@ -22,7 +22,7 @@ const doshPujasData = [
     id: 3,
     title: 'Vastu Shanti Puja & Havan Booking',
     category: 'Puja Services, Dosh Puja, Hindi Puja, Online Puja',
-    image: '/vastu-shanti.jpg', // अपनी इमेज का पाथ यहाँ डालें
+    image: '/images.jpg', // अपनी इमेज का पाथ यहाँ डालें
     priceRange: '₹5,100.00 – ₹21,000.00',
     discount: '-35%'
   },
@@ -30,7 +30,7 @@ const doshPujasData = [
     id: 4,
     title: 'Pregnancy Problems Puja',
     category: 'Puja Services, Dosh Puja, Hindi Puja, Online Puja',
-    image: '/pregnancy-problems.jpg', // अपनी इमेज का पाथ यहाँ डालें
+    image: '/images.jpg', // अपनी इमेज का पाथ यहाँ डालें
     priceRange: '₹9,100.00',
     originalPrice: '₹15,000.00',
     discount: '-39%'

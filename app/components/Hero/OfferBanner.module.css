@@ -1,0 +1,121 @@
+.bannerContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.bannerWrapper {
+  background: linear-gradient(90deg, #5A32A3 0%, #432280 100%);
+  border-radius: 12px;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 10px 20px rgba(67, 34, 128, 0.15);
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.leftContent {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.giftIcon {
+  font-size: 24px;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+.bannerText {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.highlight {
+  color: #FBBF24;
+  font-weight: 700;
+}
+
+.rightContent {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.codeTag {
+  border: 1px dashed rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.08);
+  padding: 8px 16px;
+  border-radius: 6px;
+  color: #E9D5FF;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.codeText {
+  color: #FFFFFF;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.bookNowBtn {
+  background: #FFFFFF;
+  color: #432280;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.bookNowBtn:hover {
+  background: #F3E8FF;
+  transform: translateY(-1px);
+}
+
+.arrow {
+  transition: transform 0.2s;
+}
+
+.bookNowBtn:hover .arrow {
+  transform: translateX(3px);
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+@media (max-width: 768px) {
+  .bannerWrapper {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    padding: 20px;
+  }
+  .leftContent {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .rightContent {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+  .codeTag {
+    width: 100%;
+  }
+  .bookNowBtn {
+    width: 100%;
+    justify-content: center;
+  }
+}

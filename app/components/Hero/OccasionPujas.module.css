@@ -1,0 +1,236 @@
+.section {
+  width: 100%;
+  padding: 60px 0 80px 0;
+  background-color: #FFFDF9; /* आपकी प्रीमियम लाइट थीम */
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header Flex Layout styles */
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 40px;
+  gap: 40px;
+}
+
+.headerLeft {
+  max-width: 700px;
+}
+
+.mainTitle {
+  font-size: 36px;
+  color: #0F172A;
+  font-weight: 800;
+  margin: 0 0 12px 0;
+}
+
+.subTitle {
+  font-size: 15px;
+  color: #64748B;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.viewAllBtn {
+  background: transparent;
+  border: 2px solid #EA580C;
+  color: #EA580C;
+  padding: 12px 28px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.viewAllBtn:hover {
+  background: #EA580C;
+  color: #ffffff;
+}
+
+/* Grid layout architecture */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* Card layout structure */
+.card {
+  background: #ffffff;
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
+  border-color: #CBD5E1;
+}
+
+/* Image Container Frame overlay */
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 100%; /* 1:1 Block Perfect Square */
+  background-color: #F8FAFC;
+  overflow: hidden;
+}
+
+.pujaImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .pujaImage {
+  transform: scale(1.05);
+}
+
+.discountBadge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: #22C55E;
+  color: #ffffff;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 6px;
+  z-index: 2;
+}
+
+.wishlistBtn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  cursor: pointer;
+  z-index: 2;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.wishlistBtn:hover {
+  transform: scale(1.1);
+  background: #ffffff;
+}
+
+/* Card Details Typography blocks */
+.cardContent {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.metaCategory {
+  font-size: 11px;
+  color: #94A3B8;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pujaTitle {
+  font-size: 16px;
+  color: #1E293B;
+  font-weight: 700;
+  margin: 0 0 12px 0;
+  line-height: 1.4;
+  min-height: 44px; /* Perfectly aligned heights block */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.priceRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  margin-top: auto; /* Standardized push to layout floor */
+}
+
+.currentPrice {
+  font-size: 15px;
+  color: #EA580C;
+  font-weight: 700;
+}
+
+/* Select Option Solid Button */
+.selectBtn {
+  width: 100%;
+  background: #22C55E;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.selectBtn:hover {
+  background: #16A34A;
+}
+
+/* Media Breakpoints for Responsiveness */
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .mainTitle {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

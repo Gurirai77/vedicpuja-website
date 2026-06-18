@@ -1,0 +1,254 @@
+/* ==============================================================
+   📦 DESKTOP & GLOBAL STYLES (BASE STYLES)
+   ============================================================== */
+.header {
+  width: 100%;
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1000;
+}
+
+.topBar {
+  background-color: #3B2269;
+  color: #ffffff;
+  font-size: 13px;
+  padding: 10px 0;
+}
+
+.topContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainHeader {
+  padding: 16px 0;
+  border-bottom: 1px solid #F1F5F9;
+  background: #ffffff;
+}
+
+.mainContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftMeta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logoWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.brandName {
+  font-size: 22px;
+  font-weight: 800;
+  color: #EA580C;
+  line-height: 1;
+}
+
+.brandTagline {
+  font-size: 11px;
+  color: #64748B;
+  margin-top: 4px;
+}
+
+/* Search Bar Setup */
+.searchContainer {
+  display: flex;
+  flex: 1;
+  max-width: 450px;
+  position: relative;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 10px 45px 10px 16px;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  background-color: #F8FAFC;
+}
+
+.searchButton {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #EA580C;
+  border: none;
+  color: white;
+  padding: 0 14px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  cursor: pointer;
+}
+
+/* Actions Links */
+.actionLinks {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.actionItem, .cartItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  color: #475569;
+  cursor: pointer;
+}
+
+.actionIcon { font-size: 20px; }
+.actionText { font-size: 12px; font-weight: 500; }
+
+.cartIconWrapper { position: relative; }
+.cartBadge {
+  position: absolute;
+  top: -5px;
+  right: -8px;
+  background: #3B2269;
+  color: white;
+  font-size: 10px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Navbar Row */
+.navBar { background: #ffffff; border-bottom: 1px solid #E2E8F0; }
+.navContainer { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; height: 50px; }
+.navList { list-style: none; display: flex; gap: 24px; padding: 0; margin: 0; }
+.navList li a { text-decoration: none; color: #1E293B; font-size: 14px; font-weight: 600; }
+.activeLink { color: #EA580C !important; }
+
+.cartAmountBtn { background: #FFF7ED; border: 1px solid #FFEDD5; color: #EA580C; padding: 6px 14px; border-radius: 6px; font-size: 14px; font-weight: 700; cursor: pointer; }
+.amount { color: #1E293B; }
+
+.menuToggle, .drawerHeader, .drawerOverlay { display: none; }
+
+
+/* ==============================================================
+   🔥 ULTRA-CLEAN MOBILE RESPONSIVE & GAP FIX (MAX 768px)
+   ============================================================== */
+@media (max-width: 768px) {
+  /* 1. हाइड फालतू एलिमेंट्स जो गैप बढ़ा रहे थे */
+  .topBar, 
+  .desktopOnly, 
+  .actionText, 
+  .searchContainer,
+  .navBar:not(.navBarOpen) {
+    display: none !important;
+  }
+
+  /* 2. हेडर पैडिंग फिक्स (वर्टिकल स्पेस खत्म) */
+  .mainHeader {
+    padding: 6px 0 !important; 
+    height: auto !important;
+    min-height: unset !important;
+  }
+
+  /* 3. मेन कंटेनर हाइट लिमिट */
+  .mainContainer {
+    padding: 0 16px !important;
+    display: flex !important;
+    flex-direction: row !important; 
+    justify-content: space-between !important;
+    align-items: center !important;
+    min-height: unset !important;
+    height: 48px !important; 
+    margin: 0 !important;
+  }
+
+  .leftMeta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .menuToggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #334155;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .brandName {
+    font-size: 18px;
+    font-weight: 800;
+  }
+
+  .brandTagline {
+    font-size: 9px;
+    margin-top: 1px;
+  }
+
+  .actionLinks {
+    gap: 0;
+  }
+
+  /* 4. मोबाइल ड्रॉअर मेनू (जब ओपन हो) */
+  .drawerOverlay {
+    display: block;
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.4);
+    z-index: 999;
+  }
+
+  .navBarOpen {
+    display: block !important;
+    position: fixed;
+    top: 0; left: 0; width: 260px; height: 100vh;
+    box-shadow: 4px 0 15px rgba(0,0,0,0.1);
+    z-index: 1000;
+    background: #ffffff;
+  }
+
+  .navContainer {
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .drawerHeader {
+    display: flex; width: 100%; padding: 16px; background: #F8FAFC;
+    justify-content: space-between; border-bottom: 1px solid #E2E8F0;
+  }
+
+  .drawerTitle { font-weight: 700; color: #0F172A; }
+  .closeDrawerBtn { background: none; border: none; font-size: 16px; color: #64748B; }
+
+  .navList { flex-direction: column; width: 100%; gap: 0; padding: 10px 0; }
+  .navList li { width: 100%; }
+  .navList li a { display: block; padding: 14px 20px; border-bottom: 1px solid #F8FAFC; }
+
+  .cartAmountBtn { width: calc(100% - 32px); margin: 16px; text-align: center; justify-content: center; }
+
+  /* FIX: इम्प्योर सिलेक्टर्स को :global() के अंदर रैप किया ताकि Turbopack बिल्ड फेल न करे */
+  :global([class*="hero"]), 
+  :global([class*="Hero"]) {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+}

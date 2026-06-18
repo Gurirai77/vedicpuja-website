@@ -1,0 +1,172 @@
+.section {
+  width: 100%;
+  padding: 100px 0;
+  background-color: #FFFDF9; /* आपकी प्रीमियम ऑफ-व्हाइट बैकग्राउंड थीम */
+  font-family: system-ui, -apple-system, sans-serif;
+  border-top: 1px solid #F1F5F9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 80px;
+  align-items: start;
+}
+
+/* Left Sticky Column styles */
+.leftColumn {
+  position: sticky;
+  top: 40px;
+}
+
+.topTag {
+  display: inline-block;
+  color: #EA580C;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+}
+
+.mainHeading {
+  font-size: 42px;
+  color: #0F172A;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0 0 24px 0;
+}
+
+.brandText {
+  color: #5A32A3;
+}
+
+.mainDesc {
+  font-size: 16px;
+  color: #334155;
+  line-height: 1.7;
+  margin: 0 0 16px 0;
+}
+
+.subDesc {
+  font-size: 15px;
+  color: #64748B;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Right Content Grid Cards Column */
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.infoCard {
+  background: #FFFFFF;
+  border: 1px solid #F1F5F9;
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.01);
+  transition: all 0.3s ease;
+}
+
+.infoCard:hover {
+  transform: translateY(-4px);
+  border-color: #E2E8F0;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.04);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.icon {
+  font-size: 24px;
+  background: #F8FAFC;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.cardHeader h3 {
+  font-size: 16px;
+  color: #0F172A;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.infoCard p {
+  font-size: 15px;
+  color: #334155;
+  line-height: 1.7;
+  margin: 0 0 12px 0;
+}
+
+.infoCard p:last-child {
+  margin-bottom: 0;
+}
+
+.lightText {
+  color: #64748B !important;
+}
+
+.linkText {
+  color: #5A32A3;
+  font-weight: 600;
+  cursor: pointer;
+  border-bottom: 1px dashed rgba(90, 50, 163, 0.4);
+}
+
+.linkText:hover {
+  color: #EA580C;
+  border-color: #EA580C;
+}
+
+.footerHighlight {
+  background: #F3E8FF;
+  padding: 14px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #432280;
+  margin-top: 16px;
+}
+
+.purpleText {
+  color: #5A32A3;
+  font-weight: 700;
+}
+
+/* Screen Scaling adjustments */
+@media (max-width: 968px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .leftColumn {
+    position: relative;
+    top: 0;
+  }
+  .mainHeading {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .infoCard {
+    padding: 24px;
+  }
+  .mainHeading {
+    font-size: 28px;
+  }
+}

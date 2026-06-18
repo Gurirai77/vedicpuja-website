@@ -252,3 +252,82 @@
     margin-top: 0 !important;
   }
 }
+
+
+
+/* ==============================================================
+   Dropdown Menu Specific Styles (Desktop View Fix)
+   ============================================================== */
+
+/* Base container for relative positioning */
+.hasDropdown {
+  position: relative;
+}
+
+/* Submenu layout styling */
+.subMenu {
+  position: absolute;
+  top: 100%;       /* Dropdown link ke thik niche se start hoga */
+  left: 0;
+  background-color: #ffffff; /* White background taaki overlay text chhip sake */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1); /* Floating card shadow */
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  min-width: 180px;
+  padding: 8px 0;
+  margin: 4px 0 0 0;
+  list-style: none;
+  z-index: 1050; /* Hero section ke content ke upar render hone ke liye */
+  
+  /* Initial state: Hidden on desktop if not active/hovered */
+  display: none;
+}
+
+/* Hover ya JavaScript state ke triggers dropdown display ke liye */
+.hasDropdown:hover .subMenu,
+.dropdownActive .subMenu {
+  display: block;
+}
+
+/* Submenu items padding and transitions */
+.subMenu li {
+  width: 100%;
+}
+
+.subMenu li a {
+  display: block;
+  padding: 10px 16px !important;
+  color: #334155 !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  transition: all 0.2s ease;
+  white-space: nowrap; /* Text break hoke alag line mein na jaye */
+}
+
+/* Dropdown link hover effect */
+.subMenu li a:hover {
+  background-color: #FFF7ED; /* Light orange tint on hover */
+  color: #EA580C !important;
+}
+
+
+/* ==============================================================
+   Responsive Override (Aapke mobile code ke sath merge karne ke liye)
+   ============================================================== */
+@media (max-width: 768px) {
+  /* Mobile drawer ke andar absolute position ko remove karke flow sahi rakhne ke liye */
+  .subMenu {
+    position: static;
+    box-shadow: none;
+    border: none;
+    padding: 0 0 0 16px;
+    margin: 0;
+    background: transparent;
+    display: none; /* Controlled via mobile toggle */
+  }
+
+  /* JavaScript ke through toggle behavior */
+  .dropdownActive .subMenu {
+    display: block;
+  }
+}

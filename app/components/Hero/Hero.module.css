@@ -98,53 +98,6 @@
   color: #64748B;
 }
 
-/* --- CTA Button Layout --- */
-.ctaButtons {
-  display: flex;
-  gap: 16px;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.primaryBtn {
-  background-color: #EA580C;
-  color: #ffffff;
-  border: none;
-  padding: 14px 32px;
-  font-size: 15px;
-  font-weight: 600;
-  border-radius: 8px;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  transition: all 0.2s ease;
-}
-
-.primaryBtn:hover {
-  background-color: #D97706;
-  transform: translateY(-1px);
-}
-
-.secondaryBtn {
-  background: #ffffff;
-  color: #EA580C;
-  border: 1px solid #E2E8F0;
-  padding: 14px 32px;
-  font-size: 15px;
-  font-weight: 600;
-  border-radius: 8px;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  transition: all 0.2s ease;
-}
-
-.secondaryBtn:hover {
-  background: #F8FAFC;
-  border-color: #CBD5E1;
-}
 
 /* --- Right Column Layout & Image Mask --- */
 .rightCol {
@@ -314,4 +267,133 @@
   .muhuratCard {
     right: 20px;
   }
+}
+
+
+/* --- CTA Button Layout --- */
+.ctaButtons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%; /* Ensure it takes full width container */
+}
+
+.primaryBtn {
+  background-color: #EA580C;
+  color: #ffffff;
+  border: none;
+  padding: 14px 32px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; /* Added to center text/icon inside button */
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.primaryBtn:hover {
+  background-color: #D97706;
+  transform: translateY(-1px);
+}
+
+.secondaryBtn {
+  background: #ffffff;
+  color: #EA580C;
+  border: 1px solid #E2E8F0;
+  padding: 14px 32px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; /* Added to center text/icon inside button */
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.secondaryBtn:hover {
+  background: #F8FAFC;
+  border-color: #CBD5E1;
+}
+
+/* --- Responsive Layout Adjustments --- */
+@media (max-width: 576px) {
+  .ctaButtons {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: stretch;   /* Stretch them to be equal width */
+    gap: 12px;
+  }
+
+  .primaryBtn, .secondaryBtn {
+    width: 100%;            /* Full width on mobile views */
+  }
+}
+
+
+/* --- CTA Button Layout --- */
+.ctaButtons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.primaryBtn {
+  background-color: #EA580C;
+  color: #ffffff;
+  border: none;
+  
+  /* Fixed height ki jagah vertical padding use karein */
+  padding: 14px 32px; 
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  
+  /* Text ko box ke andar har taraf se center karne ke liye */
+  display: inline-flex;
+  align-items: center;      /* Vertically Center */
+  justify-content: center;  /* Horizontally Center */
+  line-height: 1;           /* Line height 1 rakhne se vertical shift nahi hota */
+  gap: 8px;
+  
+  transition: all 0.2s ease;
+}
+
+.primaryBtn:hover {
+  background-color: #D97706;
+  transform: translateY(-1px);
+}
+
+.secondaryBtn {
+  background: #ffffff;
+  color: #EA580C;
+  border: 1px solid #E2E8F0;
+  
+  /* Same padding as primary button */
+  padding: 14px 32px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  
+  /* Same center alignment */
+  display: inline-flex;
+  align-items: center;      /* Vertically Center */
+  justify-content: center;  /* Horizontally Center */
+  line-height: 1;           /* Line height 1 */
+  gap: 8px;
+  
+  transition: all 0.2s ease;
+}
+
+.secondaryBtn:hover {
+  background: #F8FAFC;
+  border-color: #CBD5E1;
 }

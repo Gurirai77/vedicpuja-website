@@ -328,10 +328,6 @@
     align-items: stretch;   /* Stretch them to be equal width */
     gap: 12px;
   }
-
-  .primaryBtn, .secondaryBtn {
-    width: 100%;            /* Full width on mobile views */
-  }
 }
 
 
@@ -344,32 +340,6 @@
   width: 100%;
 }
 
-.primaryBtn {
-  background-color: #EA580C;
-  color: #ffffff;
-  border: none;
-  
-  /* Fixed height ki jagah vertical padding use karein */
-  padding: 14px 32px; 
-  font-size: 15px;
-  font-weight: 600;
-  border-radius: 8px;
-  cursor: pointer;
-  
-  /* Text ko box ke andar har taraf se center karne ke liye */
-  display: inline-flex;
-  align-items: center;      /* Vertically Center */
-  justify-content: center;  /* Horizontally Center */
-  line-height: 1;           /* Line height 1 rakhne se vertical shift nahi hota */
-  gap: 8px;
-  
-  transition: all 0.2s ease;
-}
-
-.primaryBtn:hover {
-  background-color: #D97706;
-  transform: translateY(-1px);
-}
 
 .secondaryBtn {
   background: #ffffff;
@@ -396,4 +366,14 @@
 .secondaryBtn:hover {
   background: #F8FAFC;
   border-color: #CBD5E1;
+}
+
+
+.primaryBtn,
+.secondaryBtn {
+  height: 59px;      /* fixed height */
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
